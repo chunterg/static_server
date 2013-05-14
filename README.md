@@ -1,4 +1,4 @@
-static_server
+Static server
 =============
 
 Static server by nodejs

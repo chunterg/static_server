@@ -1,0 +1,22 @@
+!!!5
+html
+  head
+    title #{title}
+    style
+      body{font-family:Courier;}
+      li{list-style:none;}
+      .folder{float:left;}
+      .folder img{vertical-align:middle;}
+      .f_name{margin-left:20px;display:block;height:25px;line-height:25px;}
+      .f_name:hover{background:#ccc;}
+  body
+    h1 #{h1}
+    ul.files
+     - for (var key in body)
+      li 
+        if body[key]['isDir'] == true
+          span.folder
+            img(src="http://#{_root}/static_server/images/folder-16.png")
+        a.f_name(href=body[key]['src'])(title=body[key]['name']) #{body[key]['name']}
+
+      
