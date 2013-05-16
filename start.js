@@ -1,6 +1,6 @@
 var fs = require('fs');
 var exec = require('child_process').exec;
-var express = require('./sys/node_modules/express');
+var express = require('express');
 var app = express();
 //include request-map module
 var req_map = require('./lib/request-map/ajax');
