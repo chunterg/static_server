@@ -39,4 +39,4 @@ app.listen(cfg.port);
 console.log('server start');
 
 //console.log(process.memoryUsage())
-//exec("start http://localhost:" + cfg.port + "/");
+exec("start http://localhost:" + cfg.port + "/");

@@ -11,4 +11,7 @@ Static server by nodejs
   * Support markdown
 
 ## How to use
-1.Set the request url which you want to debug in config.json
+In windows
+```js
+run start.bat
+```
