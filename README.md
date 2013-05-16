@@ -11,8 +11,12 @@ Static server by nodejs
   * Support markdown
 
 ## How to use
-### 1.Set the config.json file
-```js
+### 1.Install dependent modules
+```
+npm install -g express jase less markdown
+```
+### 2.Set the config.json file
+```
 {
  "port":3000,//server port
 	"root":"D:/static", // the root dictionary of server
@@ -20,13 +24,13 @@ Static server by nodejs
 	"compileLess":true //auto compile less to css
 }
 ```
-### 2. start the server
+### 3. start the server
 In windows
-```js
+```
 run start.bat
 ```
 
 In OSX/linux
-```js
+```
 $ node server_path/start.js
 ```
