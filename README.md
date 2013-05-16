@@ -1,6 +1,4 @@
-Static server
-=============
-
+#Static server
 Static server by nodejs
 
 ## Features
@@ -15,15 +13,17 @@ Static server by nodejs
 ```
 npm install -g express jase less markdown
 ```
+
 ### 2.Set the config.json file
 ```
 {
- "port":3000,//server port
+ 	"port":3000,//server port
 	"root":"D:/static", // the root dictionary of server
 	"debug":true, //debug mode
 	"compileLess":true //auto compile less to css
 }
 ```
+
 ### 3. start the server
 In windows
 ```

@@ -5,9 +5,9 @@ var app = express();
 //include request-map module
 var req_map = require('./lib/request-map/ajax');
 //include file walk module
-var file_walk = require('./lib/file-walk/walk');
+var file_walk = require('./lib/walk');
 //include file walk module
-var pre = require('./lib/pre-work/compile');
+var pre = require('./lib/compile');
 
 //load server config
 var cfg = fs.readFileSync(__dirname + '/config.json', 'utf8');
