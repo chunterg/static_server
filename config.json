@@ -1,4 +1,6 @@
 {
-	"port":3000,
-	"root":"D:/static"
+	"port":3000, //server port
+	"root":"D:/static", //root dictionary of the server
+	"debug":true,
+	"compileLess":true  //auto compile less to css
 }
