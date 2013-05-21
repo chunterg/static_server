@@ -23,7 +23,7 @@ just set the confg.json file in lib/ajax-debug/config.json
 {
 	"rewrite":{
 		"enable":true, //enable the url rewrite
-		"map":["ajax.yourdomain.com"]  //the online domain to be replaced
+		"map":["ajax.yourdomain.com"]  //the online domain to be rewrited.
 		} ,
 	"RequestMap": {
 		"getUserIdByName": {
@@ -44,7 +44,29 @@ just set the confg.json file in lib/ajax-debug/config.json
 	}
 }
 ```
+## How to add middleware extensions?
+Develop extension as middleware modlue
 
+```
+exports.run = function(cfg) {
+	return function(req, res, next) {
+		your code...
+	}
+}
+```
+
+Add extension to the config.json file 
+
+```
+{
+	...
+	"middlewares":[   
+		"extension path",// the path for the middleware plugins
+		"./lib/compile"
+		]
+	...
+}
+```
 
 ## How to use
 ### 1.Install dependent modules
