@@ -2,6 +2,7 @@
 	"port":80,
 	"root":"D:/static",
 	"cache":true,
+	"encode":"gbk",
 	"middlewares":[
 		"./lib/ajax-debug/ajax",
 		"./lib/compile"
