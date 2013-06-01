@@ -27,6 +27,34 @@ Example:
 		"map":["style.alibaba.com"]
 		} ,
 	"RequestMap": {
+		"getSelfImport":{
+			"req":{},
+			"res":{
+				"success":{
+					"status": "ok",
+					"data":[{
+							"username":"useg.jad",
+							"uv":"123123"
+						},
+						{
+							"username":"useg.jad",
+							"uv":"123123"
+						},
+						{
+							"username":"useg.jad",
+							"uv":"123123"
+						},
+						{
+							"username":"useg.jad",
+							"uv":"123123"
+						}]
+				},
+				"fail":{
+					"status": "fail",
+					"message":"No match"
+				}
+			}
+		},
 		"getUserIdByName": {
 			"req": {
 				"name": "chunterg"

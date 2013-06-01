@@ -1,1 +1,1 @@
-@"node.exe" start.js
+@"node.exe" sserver.js
